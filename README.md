@@ -38,12 +38,16 @@ to create resources of 'type'.
 
 ## Usage
 
+````puppet
 include '::create::users'
+```
 
+````yaml
 create_users:
   joe:
     managehome: true
     shell: /bin/bash
+```
 
 ## Reference
 
@@ -72,17 +76,17 @@ create_users:
 
 #### Hiera Keys
 
-`create_crons`
-`create_execs`
-`create_files`
-`create_groups`
-`create_hosts`
-`create_nagios_commands`
-`create_nagios_hosts`
-`create_nagios_services`
-`create_packages`
-`create_services`
-`create_ssh_authorized_keys`
-`create_sshkeys`
-`create_users`
-`create_yumrepos`
+* `create_crons`
+* `create_execs`
+* `create_files`
+* `create_groups`
+* `create_hosts`
+* `create_nagios_commands`
+* `create_nagios_hosts`
+* `create_nagios_services`
+* `create_packages`
+* `create_services`
+* `create_ssh_authorized_keys`
+* `create_sshkeys`
+* `create_users`
+* `create_yumrepos`
