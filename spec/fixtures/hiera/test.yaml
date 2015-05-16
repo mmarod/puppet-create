@@ -1,0 +1,33 @@
+---
+create_crons:
+  logrotate:
+    command: /usr/sbin/logrotate
+    user: root
+    hour: 2
+    minute: 0
+create_execs:
+  whoami:
+    command: /usr/bin/whoami
+create_files:
+  /tmp/myfile.txt:
+    content: moo
+create_groups:
+  mygroup: {}
+create_hosts:
+  myhost:
+    ip: 192.168.1.2
+create_nagios_commands:
+  mycommand: {}
+create_nagios_hosts:
+  myhost: {}
+create_nagios_services:
+  myservice: {}
+create_ssh_authorized_keys:
+  mykey:
+    user: joe
+create_sshkeys:
+  mykey: {}
+create_users:
+  joe: {}
+create_yumrepos:
+  myrepo: {}

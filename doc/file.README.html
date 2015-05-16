@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!file.README.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="puppet_manifest_list_link"
+        href="puppet_manifest_list.html">
+      Puppet Manifest List
+    </a>
+  
+    <a class="full_list_link" id="puppet_plugin_list_link"
+        href="puppet_plugin_list.html">
+      Puppet Plugin List
+    </a>
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>Create</h1>
+
+<h4>Table of Contents</h4>
+
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#module-description">Module Description - What the module does and why it is useful</a></li>
+<li><a href="#setup">Setup - The basics of getting started with Create</a>
+
+<ul>
+<li><a href="#what-Create-affects">What Create affects</a></li>
+<li><a href="#setup-requirements">Setup requirements</a></li>
+<li><a href="#beginning-with-Create">Beginning with Create</a></li>
+</ul></li>
+<li><a href="#usage">Usage - Configuration options and additional functionality</a></li>
+<li><a href="#reference">Reference - An under-the-hood peek at what the module is doing and how</a></li>
+<li><a href="#limitations">Limitations - OS compatibility, etc.</a></li>
+<li><a href="#development">Development - Guide for contributing to the module</a></li>
+</ol>
+
+<h2>Overview</h2>
+
+<p>The Create module realizes resources defined in Hiera data by using create_resources.</p>
+
+<h2>Module Description</h2>
+
+<p>The Create module realizes resources defined in Hiera data by using create_resources.</p>
+
+<h2>Setup</h2>
+
+<h3>What Create affects</h3>
+
+<p>Resources will be created on the system.</p>
+
+<h3>Setup requirements</h3>
+
+<ul>
+<li>Puppet-3.0.0 or later</li>
+</ul>
+
+<h3>Beginning with Create</h3>
+
+<p>Include &#39;::create::(type)&#39; in your manifests and create hiera data with a key &#39;create_(type)&#39;
+to create resources of &#39;type&#39;.</p>
+
+<h2>Usage</h2>
+
+<p>include &#39;::create::users&#39;</p>
+
+<p>create_users:
+  joe:
+    managehome: true
+    shell: /bin/bash</p>
+
+<h2>Reference</h2>
+
+<h3>Classes</h3>
+
+<h4>Public Classes</h4>
+
+<ul>
+<li><a href="#create-crons">create::crons</a>: Create cron resources</li>
+<li><a href="#create-execs">create::execs</a>: Create exec resources</li>
+<li><a href="#create-files">create::files</a>: Create file resources</li>
+<li><a href="#create-groups">create::groups</a>: Create group resources</li>
+<li><a href="#create-hosts">create::hosts</a>: Create host resources</li>
+<li><a href="#create-nagios-commands">create::nagios_commands</a>: Create nagios_command resources</li>
+<li><a href="#create-nagios-hosts">create::nagios_hosts</a>: Create nagios_host resources</li>
+<li><a href="#create-nagios-services">create::nagios_services</a>: Create nagios_service resources</li>
+<li><a href="#create-packages">create::packages</a>: Create package resources</li>
+<li><a href="#create-services">create::services</a>: Create service resources</li>
+<li><a href="#create-ssh-authorzied-keys">create::ssh_authorized_keys</a>: Create ssh_authorized_key resources</li>
+<li><a href="#create-sshkeys">create::sshkeys</a>: Create sshkey resources</li>
+<li><a href="#create-users">create::users</a>: Create user resources</li>
+<li><a href="#create-yumrepos">create::yumrepos</a>: Create yumrepo resources</li>
+</ul>
+
+<h4><code>create</code></h4>
+
+<h3>Parameters</h3>
+
+<h4>Hiera Keys</h4>
+
+<p><code>create_crons</code>
+<code>create_execs</code>
+<code>create_files</code>
+<code>create_groups</code>
+<code>create_hosts</code>
+<code>create_nagios_commands</code>
+<code>create_nagios_hosts</code>
+<code>create_nagios_services</code>
+<code>create_packages</code>
+<code>create_services</code>
+<code>create_ssh_authorized_keys</code>
+<code>create_sshkeys</code>
+<code>create_users</code>
+<code>create_yumrepos</code></p>
+</div></div>
+
+    <div id="footer">
+  Generated on Sat May 16 20:57:33 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
