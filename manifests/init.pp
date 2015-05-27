@@ -16,6 +16,7 @@ class create (  $types  = [ 'crons',
                             'files',
                             'packages',
                             'services',
+                            'pams',
                             'ssh_authorized_keys',
                             'users',
                             'yumrepos' ] ) {
