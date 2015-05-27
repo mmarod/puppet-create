@@ -31,3 +31,7 @@ create_users:
   joe: {}
 create_yumrepos:
   myrepo: {}
+create_packages:
+  git: {}
+create_services:
+  nagios: {}
