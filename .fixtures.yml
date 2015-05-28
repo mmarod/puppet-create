@@ -3,5 +3,8 @@ fixtures:
     create: "#{source_dir}"
   forge_modules:
     stdlib:
-        repo: "puppetlabs/stdlib"
-        ref: "4.6.0"
+      repo: "puppetlabs/stdlib"
+      ref: "4.6.0"
+    logrotate:
+      repo: "rodjek/logrotate"
+      ref: "1.1.1"
